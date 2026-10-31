@@ -15,10 +15,6 @@ class Generator:
             self.network.add(bbml.PreTrainedLayer(model_path / f"layer_{i}_weights.npy", model_path / f"layer_{i}_biases.npy", activations[i]))
         for i, layer in enumerate(self.network.layers):
             layer.weights = layer.weights.T
-        #for i, layer in enumerate(self.network.layers):
-        #    layer.biases = layer.biases.T
-        for i, layer in enumerate(self.network.layers):
-            print(f"layer {i}: weights shape: {layer.weights.shape}, biases shape: {layer.biases.shape}")
 
     def generate(self, input_python_array):
         input_np_array = np.array(input_python_array)
