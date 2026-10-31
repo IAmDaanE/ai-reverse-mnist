@@ -10,6 +10,8 @@ To properly test this i made a UI using [my very own pygame gui library](https:/
 
 I will spoil that the results aren't great, forward passes with an activation function are lossy and pretrained models aren't meant to just be turned around.
 
+## Starting the UI
+
 **Requires:** Python 3.10 - 3.14
 1. Install the required libraries, preferably in a venv.
 
