@@ -6,7 +6,9 @@ I previously built an mnist handwritten digit classification project ([this repo
 
 ## About the Project
 
-To properly test this i made a UI where you can manually change the input score for each digit and then watch what the network makes of that. To attempt to make the results clearer i also did some color processing like boosting pixels that are closer to the center and making the colors exponentially increase in brightness instead of linearly. I will spoil that the results aren't great, forward passes with an activation function are lossy and pretrained models aren't meant to just be turned around, this project was a great excuse to built this [awesome pygame GUI library](https://github.com/IAmDaanE/skyline-pygame) called skyline though.
+To properly test this i made a UI using [my very own pygame gui library](https://github.com/IAmDaanE/skyline-pygame) called skyline where you can manually change the input score for each digit and then watch what the network makes of that. To attempt to make the results clearer i also did some color processing like boosting pixels that are closer to the center and making the colors exponentially increase in brightness instead of linearly. The parameters of these color manipulations are also controlable with the gui. 
+
+I will spoil that the results aren't great, forward passes with an activation function are lossy and pretrained models aren't meant to just be turned around.
 
 **Requires:** Python 3.10 - 3.14
 1. Install the required libraries, preferably in a venv.
